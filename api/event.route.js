@@ -32,13 +32,12 @@ eventRoutes.route('/').get(function (req, res) {
 
 
 
-/* Defined delete | remove | destroy route
 eventRoutes.route('/delete/:id').get(function (req, res) {
     Event.findByIdAndRemove({_id: req.params.id}, function(err, event){
         if(err) res.json(err);
         else res.json('Successfully removed');
     });
 });
-*/
+
 
 module.exports = eventRoutes; 
