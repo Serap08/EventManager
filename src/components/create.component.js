@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-
+import moment from 'moment';
 
 export default class Create extends Component {
   constructor(props) {
@@ -44,9 +44,10 @@ export default class Create extends Component {
     
     this.setState({
       event_name: '', 
-
     })
-    
+       this.setState({
+      startDate: '', 
+    })
   }
  
   render() {

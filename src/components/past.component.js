@@ -1,10 +1,10 @@
-// index.component.js
+// past.component.js
 
 import React, { Component } from 'react';
 import axios from 'axios';
 import TableRow from './TableRow';
 import moment from 'moment';
-export default class Index extends Component {
+export default class Past extends Component {
 
   constructor(props) {
       super(props);
@@ -25,7 +25,7 @@ export default class Index extends Component {
   tabRow(){
       var events = this.state.event
       events.sort((a,b) => {   return new Date(a.startDate) - new Date(b.startDate)} ) ;
-      events = events.filter(a => new Date(a.startDate) - new Date > 0);
+      events = events.filter(a => new Date(a.startDate) - new Date < 0);
       return events.map(function(object, i){
       return <TableRow obj={object} key={i} />;
    });

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 import Create from './components/create.component';
 import Index from './components/index.component';
+import Past from './components/past.component';
 
 
 class App extends Component {
@@ -17,11 +18,14 @@ class App extends Component {
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav mr-auto">
-               <li className="nav-item">
-                  <Link to={'/index'} className="nav-link">Calendar Events</Link>
-                </li>
                 <li className="nav-item">
                   <Link to={'/create'} className="nav-link">Create Event</Link>
+                </li>
+               <li className="nav-item">
+                  <Link to={'/index'} className="nav-link">Upcoming Events</Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={'/past'} className="nav-link">Past events</Link>
                 </li>
               </ul>
             </div>
@@ -29,6 +33,7 @@ class App extends Component {
           <Switch>
               <Route exact path='/create' component={ Create } />
               <Route path='/index' component={ Index } />
+              <Route path='/past' component={ Past } />
               <Route path='/' component={ Index } />
 
           </Switch>
