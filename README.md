@@ -1,18 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-1. After downloading the project, install react-app module in your terminal by writing: 
+1. After downloading the project, install the react-app module: 
 
      npm install create-react-app
      
-2. Start the back end server by first going to project's api folder by writing 
+2. Start the back end server by first going to project's api folder:
      cd api
     
-   Run the following command to start back-end server:
+     then starting the back-end server:
      nodemon server
-     (You will get a message "Database connected" on the terminal)
+     (The message "Database connected" should display in your terminal)
     
-3. While the server is running, open a new terminal and write the following command to view the project in browser:
+3. While the server is running, open a new terminal and run the following command to view the application running: 
      npm start
      (Project will be running on http://localhost:3000)
      
