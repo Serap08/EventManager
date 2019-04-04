@@ -14,6 +14,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     
 3. While the server is running, open a new terminal and run the following command to view the application running: 
      npm start
-     (Project will be running on http://localhost:3000)
+     (The application will be running on http://localhost:3000)
      
   
